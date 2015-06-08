@@ -1,0 +1,43 @@
+/*********************************************************************
+*
+*  Start Module
+*
+*  This module is NOT responsible for style,
+*  it does only import other modules,
+*  start  for the project.
+*  No matter modules elsewhere,
+*  this leaves the messy and even confusing design.
+*  Aside / vendors that are made by third parties.
+*
+*
+*********************************************************************/
+
+//Vendors (JeetGrid, Bourbon)
+@import "vendors/jeet/index";       //Grids
+@import "vendors/bourbon/bourbon"; //Bourbon A Sass Mixin Library
+@@import "vendors/breakpoint"; // Breakpoint, Responsive Design
+
+
+//BASE
+@import "base/variables";
+@import "base/basic";
+@import "base/typography";
+
+//HELPERS
+@import "helpers/_functions";
+@import "helpers/_mixins";
+
+//COMPONENTS
+@import "components/_sprite.scss"; //Dynamically created through the grunt css_sprite task
+@import "components/base64.scss";  //Dynamically created through the grunt css_sprite task
+
+//LAYOUT
+@import "layout/header";
+@import "layout/footer";
+
+
+
+
+
+
+

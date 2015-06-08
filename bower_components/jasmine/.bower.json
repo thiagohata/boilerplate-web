@@ -1,0 +1,15 @@
+{
+  "name": "jasmine",
+  "_cacheHeaders": {
+    "ETag": "\"2a05170018a3952a9671572aaf9bea9a\"",
+    "Last-Modified": "Wed, 13 May 2015 22:04:32 GMT",
+    "Content-Length": "44928",
+    "Content-Type": "application/octet-stream",
+    "Content-Disposition": "attachment; filename=jasmine-standalone-2.3.4.zip"
+  },
+  "_release": "e-tag:2a0517001",
+  "_source": "https://github.com/jasmine/jasmine/releases/download/v2.3.4/jasmine-standalone-2.3.4.zip",
+  "_target": "*",
+  "_originalSource": "https://github.com/jasmine/jasmine/releases/download/v2.3.4/jasmine-standalone-2.3.4.zip",
+  "_direct": true
+}

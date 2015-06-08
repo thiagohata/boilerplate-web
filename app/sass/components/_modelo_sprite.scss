@@ -1,0 +1,20 @@
+/*********************************************************************
+*
+*  Model create sprites.
+*  The class that will have the link sprite by default is called .icon
+*
+*  ** How to use: **
+*  01 - Insert the image in img / sprites, note the image name (without extension)
+*  02 - In your css:
+*
+*         .icon-camera {
+*              @include sprite($nameImage);
+*         }
+*
+*  03 - In its Dash, if running the server grunt,
+*       open a new tab and launch the task:
+*       grunt css-sprite, automatically created sprite and
+*       define the image position
+*
+*********************************************************************/
+
