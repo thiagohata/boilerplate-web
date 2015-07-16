@@ -2,6 +2,9 @@
 
 module.exports = function(grunt){
 
+    //Time tasks
+     require('time-grunt')(grunt);
+
     // Paths
     var dir = {
         app: 'app',
