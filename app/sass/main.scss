@@ -15,7 +15,8 @@
 //Vendors (JeetGrid, Bourbon)
 @import "vendors/jeet/index";       //Grids
 @import "vendors/bourbon/bourbon"; //Bourbon A Sass Mixin Library
-@@import "vendors/breakpoint"; // Breakpoint, Responsive Design
+@import "vendors/breakpoint"; // Breakpoint, Responsive Design
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss"; //Bootstrap
 
 
 //BASE
