@@ -1,9 +1,10 @@
 # Boilerplate-web
 
-Esse é o Boilerplate que uso para starta meus projetos.
+Esse é o Boilerplate, scaffolding que uso para starta meus projetos.
 
 **Depedências:**
 
+- [Ruby](https://www.ruby-lang.org/pt/)
 - [Node.js](https://nodejs.org/)
 - [Bower](http://bower.io/)
 - [Grunt](http://gruntjs.com/)
@@ -40,8 +41,7 @@ $ grunt
 
 ## Como foi desenvolvido esse Boilerplate.
 
-Depois de usar muitos Boilerplate prontos por ai, algumas vezes faltavam coisas ou as vezes tinham muita coisa, resolvi fazer um Boilerplate para atender as minhas necessidades quando inicio
-algum projeto web. Esse Boilerplate atende as minhas necessidades espero poder ajudar mais pessoas com ele.
+Criei esse scaffolding para startar projetos que utilizo para web. Depois de usar muitos Boilerplate /scaffolding  prontos por ai, algumas vezes faltavam coisas ou as vezes tinham muita coisa, resolvi fazer um Boilerplate para atender as minhas necessidades quando inicio algum projeto web. Esse Boilerplate atende as minhas necessidades espero poder ajudar mais pessoas com ele.
 
 
 ## Bibliotecas
@@ -51,8 +51,13 @@ Utilizo algumas bibliotecas básicas que me auxiliam e me dão rapidez.
 As depedências são controladas pelo **Bower**
 
 **jQuery:** Usado pela facilidade e rapidez que proporciona a um projeto crossbrowser.
+
 ** Modernizr:** Para detectar e tratar features CSS3 e HTML5.
-** Jasmine:** Criar os teste automatizados da aplicação.
+
+**Bootstrap:** Adicionado em 16 de julho de 2015 com uma sintaxe SASS permitindo usar apenas o necessário e remover o que não for usado.
+
+** Jasmine:** Criar os teste unitários da aplicação.
+
 
 As bibliotecas básicas que uso são essas. Fique a vontade de remover e adicionar bibliotecas.
 
