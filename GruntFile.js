@@ -247,6 +247,18 @@ module.exports = function(grunt){
 
      grunt.registerTask('server', ['browserSync', 'watch']);
 
+     // No version files and not minify the html
+     grunt.registerTask('producao', [
+         'clean:dist',
+         'copy',
+         'useminPrepare',
+         'concat',
+         'cssmin',
+         'uglify',
+         'usemin',
+         'imagemin',
+         'clean:remove'
+         ]);
 
     //Grunt Start plugins,
     grunt.loadNpmTasks('grunt-contrib-clean');
