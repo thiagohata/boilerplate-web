@@ -13,20 +13,25 @@
 *********************************************************************/
 
 //Vendors (JeetGrid, Bourbon)
+
+
 @import "vendors/jeet/index";       //Grids
 @import "vendors/bourbon/bourbon"; //Bourbon A Sass Mixin Library
 @import "vendors/breakpoint"; // Breakpoint, Responsive Design
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss"; //Bootstrap
 
 
+//HELPERS
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/generic";
+
 //BASE
+@import "base/reset";
 @import "base/variables";
 @import "base/basic";
 @import "base/typography";
 
-//HELPERS
-@import "helpers/_functions";
-@import "helpers/_mixins";
 
 //COMPONENTS
 @import "components/_sprite.scss"; //Dynamically created through the grunt css_sprite task

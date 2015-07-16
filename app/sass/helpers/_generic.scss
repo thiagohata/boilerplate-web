@@ -1,0 +1,67 @@
+/*********************************************************************
+*
+*  Generic Module
+*
+*  This Module Generics that might increase production in the project
+*
+*
+*    USE:
+*
+*   .minhaClasse {
+*        @extend %display-block, %bold, %text-justify;
+*   }
+*
+*   Note:
+*   Use consciously
+*
+*********************************************************************/
+
+
+/*********************************************************************
+*   FONTS AND LINKS
+**********************************************************************/
+
+%bold { font-weight: bold; }
+
+%italic { font-style: italic; }
+
+%uppercase { text-transform: uppercase; }
+
+%underline { text-decoration: underline; }
+
+%no-underline {text-decoration: none; }
+
+%text-left { text-align: left;}
+
+%text-center { text-align: center;}
+
+%text-right { text-align: right; }
+
+%text-justify { text-align: justify; }
+
+
+/*********************************************************************
+*   DISPLAY
+**********************************************************************/
+
+%display-block { display: block; }
+
+%display-inline-block { display: inline-block; }
+
+%displa-inline {display: inline; }
+
+%display-none { display: none; }
+
+
+/*********************************************************************
+*   IMG
+**********************************************************************/
+
+%img-replacement {
+   text-indent: -999px;
+   overflow: hidden;
+}
+
+
+
+

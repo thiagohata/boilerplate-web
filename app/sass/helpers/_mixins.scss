@@ -6,3 +6,22 @@
 *  to create a Mixin, document its use.
 *
 *********************************************************************/
+
+
+/*******************************************************************
+*  =Mixin Opacity
+*
+*   Opacity elements
+*
+*   Usage:
+*   .faded-text {
+*       @include opacity(0.8);
+*   }
+*
+*********************************************************************/
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
