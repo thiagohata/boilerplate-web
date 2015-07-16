@@ -21,23 +21,16 @@ Pensando que já tem as depedências instaladas na máquina.
 
 3 - No terminal instale os módulos necessários para o projeto.
 
-```
-$ [sudo] npm install
+	$ [sudo] npm install
 
-```
 4 - Rode o servidor:
 
-```
-$ grunt server
-
-```
+	$ grunt server
 
 5 - Para gerar os arquivos (concatenados, minificados, sprites, versionados e otimizados )
+	
+	$ grunt
 
-```
-$ grunt
-
-```
 
 ## Como foi desenvolvido esse Boilerplate.
 
