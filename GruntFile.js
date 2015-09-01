@@ -72,30 +72,6 @@ module.exports = function(grunt){
             html: '<%= dir.dist %>/**/*.html'
         },
 
-        //SPRITE ()
-        css_sprite: {
-              options: {
-                'cssPath': '../img/css_images/',
-                'processor': 'scss',
-                'orientation': 'vertical',
-                'margin': 4
-              },
-              sprite: {
-                options: {
-                  'style': '<%= dir.app %>/sass/components/_sprite.scss'
-                },
-                src: ['<%= dir.app %>/img/sprites/*'],
-                dest: '<%= dir.app %>/img/css_images/sprite',
-              },
-              base64: {
-                options: {
-                  'base64': true
-                },
-                src: ['<%= dir.app %>/img/sprites/*'],
-                dest: '<%= dir.app %>/sass/components/_base64.scss',
-              }
-        },
-
         //Image Optimization
         imagemin: {
             public:{
@@ -267,7 +243,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-usemin');
-    grunt.loadNpmTasks('css-sprite');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-rev');
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -275,7 +250,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-
 
 
 }

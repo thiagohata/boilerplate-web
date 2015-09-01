@@ -34,8 +34,7 @@
 
 
 //COMPONENTS
-@import "components/_sprite.scss"; //Dynamically created through the grunt css_sprite task
-@import "components/base64.scss";  //Dynamically created through the grunt css_sprite task
+@import "components/sprite";
 
 //LAYOUT
 @import "layout/header";
