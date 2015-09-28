@@ -1,0 +1,36 @@
+/*********************************************************************
+*
+*  Módulo Scaffolding
+*
+*  Este módulo é um módulo que vai crescendo
+*  conforme seu projeto vai crescendo,
+*  aqui são usadas classes auxiliares que podem
+*  ser usadas em vários momentos do projeto
+*
+*
+*********************************************************************/
+
+
+
+.container{
+    @include breakpoint($mobile) {
+
+    }
+    @include breakpoint($tablets) {
+        @include center(750px);
+    }
+
+    @include breakpoint($desktop-old) {
+        @include center(980px);
+    }
+    @include breakpoint($desktop-modern) {
+        @include center(1170px);
+    }
+    &:before, &:after{
+        content: " ";
+        display: table;
+    }
+    &:after{
+        clear: both;
+    }
+}

@@ -1,10 +1,11 @@
 /*********************************************************************
 *
-*  Variables Module
+*  Módulo Variables
 *
-*  All project variables must be set in this module.
-*  Except components / sprite and base64 that are
-*  generated dynamically.
+*  Defina todas as variáveis que forem ser usadas no projeto
+*  nesse módulo.
+*  Excessões vendors de terceiros ou components criados
+*  para serem indepedentes.
 *
 *********************************************************************/
 
@@ -18,3 +19,20 @@ $base-font-size : 16px;
 /*********************************************************************
 *  =Colors
 *********************************************************************/
+
+
+
+/*********************************************************************
+*  =Font-size
+*********************************************************************/
+
+
+/*******************************************************************
+*  =Dimension Responsive Design
+*********************************************************************/
+
+$desktop-modern: 1170px;
+$desktop-old: 998px;
+$tablets: 768px;
+$mobile2: 460px;
+$mobile: 320px;

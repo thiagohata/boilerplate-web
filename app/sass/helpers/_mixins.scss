@@ -1,9 +1,16 @@
 /*********************************************************************
 *
-*  Mixins Module
+*  Módulo Mixins
 *
-*  This module is defined all Mixels,
-*  to create a Mixin, document its use.
+*  Defina aqui seus mixins, que ajude a economizar
+*  o seu tempo, pare de digitar tanta coisa e prefixos.
+*
+*  Nota:
+*  Usando o vendor Bourbon os mixins diminuiram.
+*  Antes de criar um mixin, consulte a documentação do
+*  Bourbon e veja se ele já existe. (http://bourbon.io/docs/)
+*  Ao criar um mixin, não esqueça de atualizar em outros
+*  projetos até mesmo colaborar com esse projeto.
 *
 *********************************************************************/
 
@@ -11,9 +18,9 @@
 /*******************************************************************
 *  =Mixin Opacity
 *
-*   Opacity elements
+*   Dar opacidade a elementos
 *
-*   Usage:
+*   Modo de usar:
 *   .faded-text {
 *       @include opacity(0.8);
 *   }
@@ -24,4 +31,22 @@
   opacity: $opacity;
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/*******************************************************************
+*  =Mixin Shadow
+*
+*   Adicionar sombra alguma caixa
+*
+*   Modo de usar:
+*   .faded-text {
+*       @include box-shadow(0px, 8px, 10px, rgba(172, 170, 170, 0.75));
+*   }
+*
+*********************************************************************/
+
+@mixin box-shadow($hshadow, $vshadow, $blur, $color){
+   box-shadow: $hshadow $vshadow $blur $color;
+   -moz-box-shadow: $hshadow $vshadow $blur $color;
+   -webkit-box-shadow: $hshadow $vshadow $blur $color;
 }

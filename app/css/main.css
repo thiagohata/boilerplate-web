@@ -1,14 +1,20 @@
 @charset "UTF-8";
 /*********************************************************************
 *
-*  Start Module
+*  Módulo inicial!
 *
-*  This module is NOT responsible for style,
-*  it does only import other modules,
-*  start  for the project.
-*  No matter modules elsewhere,
-*  this leaves the messy and even confusing design.
-*  Aside / vendors that are made by third parties.
+*  Esse módulo não é responsável por estilos,
+*  serve apenas para importar outros módulos,
+*  que startam o projeto.
+*
+*  Ao rodar o grunt server ele roda automaticamente,
+*  o sass e gera em tempo de execução o css.
+*
+*  Obs: Os vendors usados podem ser colocados na pasta /css/venderos
+*  ou na pasta "bower components" assim sendo importados pelo bower.
+*
+*  Nota: Coloque as imagens linkadas no css na pasta /img/css_images.
+*  Caso não queira versionar alguma image coloquei também nessa pasta.
 *
 *
 *********************************************************************/
@@ -5972,11 +5978,465 @@ button.close {
     display: none !important; } }
 /*********************************************************************
 *
-*  Variables Module
+*  Módulo de funções
 *
-*  All project variables must be set in this module.
-*  Except components / sprite and base64 that are
-*  generated dynamically.
+*  Set alguma função criada em seu projeto aqui
+*  documente o uso.
+*
+*  Nota:
+*  Usando o vendor Bourbon os functions diminuiram.
+*  Antes de criar uma function, consulte a documentação do
+*  Bourbon e veja se ele já existe. (http://bourbon.io/docs/)
+*  Ao criar uma function, não esqueça de atualizar em outros
+*  projetos até mesmo colaborar com esse projeto.
+*
+*********************************************************************/
+/*********************************************************************
+*
+*  Módulo Mixins
+*
+*  Defina aqui seus mixins, que ajude a economizar
+*  o seu tempo, pare de digitar tanta coisa e prefixos.
+*
+*  Nota:
+*  Usando o vendor Bourbon os mixins diminuiram.
+*  Antes de criar um mixin, consulte a documentação do
+*  Bourbon e veja se ele já existe. (http://bourbon.io/docs/)
+*  Ao criar um mixin, não esqueça de atualizar em outros
+*  projetos até mesmo colaborar com esse projeto.
+*
+*********************************************************************/
+/*******************************************************************
+*  =Mixin Opacity
+*
+*   Dar opacidade a elementos
+*
+*   Modo de usar:
+*   .faded-text {
+*       @include opacity(0.8);
+*   }
+*
+*********************************************************************/
+/*******************************************************************
+*  =Mixin Shadow
+*
+*   Adicionar sombra alguma caixa
+*
+*   Modo de usar:
+*   .faded-text {
+*       @include box-shadow(0px, 8px, 10px, rgba(172, 170, 170, 0.75));
+*   }
+*
+*********************************************************************/
+/*********************************************************************
+*
+*  Modulo genéricos
+*
+*  Esse módulo ajuda aumentar a melhor no tempo, ao invés de
+*  ficar digitando um propriedade você extende.
+*
+*  Cuidado ao usar em projetos e lembre-se de usar apenas
+*  placeholder (%) para não aumentar o número de linhas
+*  em seu projeto
+*
+*    Como usar:
+*
+*   .minhaClasse {
+*        @extend %display-block, %bold, %text-justify;
+*   }
+*
+*   Nota:
+*   Use com consciência
+*
+*********************************************************************/
+/*********************************************************************
+*   FONTS AND LINKS
+**********************************************************************/
+/*********************************************************************
+*   DISPLAY
+**********************************************************************/
+/*********************************************************************
+*   IMG
+**********************************************************************/
+/*********************************************************************
+*   SIZE
+**********************************************************************/
+/*********************************************************************
+*
+*  Módulo Reset
+*
+*  Este módulo usa a normalize.css como base
+*  Serve para setar o css em todos os browsers,
+*
+*
+*
+*********************************************************************/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/*********************************************************************
+*
+*  Módulo Variables
+*
+*  Defina todas as variáveis que forem ser usadas no projeto
+*  nesse módulo.
+*  Excessões vendors de terceiros ou components criados
+*  para serem indepedentes.
 *
 *********************************************************************/
 /*******************************************************************
@@ -5986,15 +6446,23 @@ button.close {
 *  =Colors
 *********************************************************************/
 /*********************************************************************
+*  =Font-size
+*********************************************************************/
+/*******************************************************************
+*  =Dimension Responsive Design
+*********************************************************************/
+/*********************************************************************
 *
-*  Basic Module
+*  Módulo Básico
 *
-*  This module the basic values here do not define class
-*  id or just basic Tags.
+*  Este módulo define os valores básicos das tags
+*  aqui não é usado, classe, id apenas seletores de tags.
 *
 *
 *********************************************************************/
 *, *:before, *:after {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -6009,6 +6477,9 @@ html {
   font-size: 100%;
   /* flexible baseline */ }
 
+body {
+  height: 100%; }
+
 h1,
 h2,
 h3,
@@ -6020,8 +6491,22 @@ address {
   margin: 0;
   padding: 0; }
 
+ul,
+ol,
+ul li,
 ol li {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a, a:hover {
+  text-decoration: none; }
+
+fieldset {
+  border: none; }
+
+address {
+  font-style: normal; }
 
 /*********************************************************************
 *
@@ -6035,42 +6520,127 @@ ol li {
 *********************************************************************/
 /*********************************************************************
 *
-*  Functions Module
+*  Módulo Scaffolding
 *
-*  This module is set all functions,
-*  to create a role, document its use.
+*  Este módulo é um módulo que vai crescendo
+*  conforme seu projeto vai crescendo,
+*  aqui são usadas classes auxiliares que podem
+*  ser usadas em vários momentos do projeto
 *
-*
-*********************************************************************/
-/*********************************************************************
-*
-*  Mixins Module
-*
-*  This module is defined all Mixels,
-*  to create a Mixin, document its use.
 *
 *********************************************************************/
-.icon {
-  background-image: url("../img/css_images/sprite.png"); }
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+    max-width: 750px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; } }
+@media (min-width: 998px) {
+  .container {
+    width: auto;
+    max-width: 980px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; } }
+@media (min-width: 1170px) {
+  .container {
+    width: auto;
+    max-width: 1170px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0; } }
+.container:before, .container:after {
+  content: " ";
+  display: table; }
+.container:after {
+  clear: both; }
 
-.icon {
-  background-image: url("data:image/png;base64,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"); }
+/*********************************************************************
+*
+*  Quando criar sprites
+*  Utilize essa pasta para importar o sprites
+*  e as classes  para setar a posição
+*
+*********************************************************************/
+/*********************************************************************
+*
+*  Módulo Header(cabeçalho)
+*
+*  Defina os estilos do seu cabeçalho aqui, os menus
+*  defina em _nav.scss.
+*
+*
+*********************************************************************/
+/* Media Queries para usar. Mobile First.
 
+   @include breakpoint($mobile) {
+
+   }
+   @include breakpoint($tablets) {
+
+   }
+   @include breakpoint($desktop-old) {
+
+   }
+   @include breakpoint($desktop-modern) {
+
+   }
+*/
 /*********************************************************************
 *
-*  Header Module
+*  Módulo Footer(rodapé)
 *
-*  This module defines the style Header.
+*  Define os estilos do seu rodapé aqui.
 *
 *
 *********************************************************************/
+/* Media Queries para usar. Mobile First.
+
+   @include breakpoint($mobile) {
+
+   }
+   @include breakpoint($tablets) {
+
+   }
+   @include breakpoint($desktop-old) {
+
+   }
+   @include breakpoint($desktop-modern) {
+
+   }
+*/
 /*********************************************************************
 *
-*  Footer Module
+*  Módulo Nav(menu)
 *
-*  This module defines the style Footer.
+*  Defina os estilos do seu menu aqui.
 *
 *
 *********************************************************************/
+/* Media Queries para usar. Mobile First.
+
+   @include breakpoint($mobile) {
+
+   }
+   @include breakpoint($tablets) {
+
+   }
+   @include breakpoint($desktop-old) {
+
+   }
+   @include breakpoint($desktop-modern) {
+
+   }
+*/
 
 /*# sourceMappingURL=main.css.map */

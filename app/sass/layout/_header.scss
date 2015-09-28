@@ -1,8 +1,26 @@
 /*********************************************************************
 *
-*  Header Module
+*  Módulo Header(cabeçalho)
 *
-*  This module defines the style Header.
+*  Defina os estilos do seu cabeçalho aqui, os menus
+*  defina em _nav.scss.
 *
 *
 *********************************************************************/
+
+
+/* Media Queries para usar. Mobile First.
+
+   @include breakpoint($mobile) {
+
+   }
+   @include breakpoint($tablets) {
+
+   }
+   @include breakpoint($desktop-old) {
+
+   }
+   @include breakpoint($desktop-modern) {
+
+   }
+*/

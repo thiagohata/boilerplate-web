@@ -1,19 +1,22 @@
 /*********************************************************************
 *
-*  Basic Module
+*  Módulo Básico
 *
-*  This module the basic values here do not define class
-*  id or just basic Tags.
+*  Este módulo define os valores básicos das tags
+*  aqui não é usado, classe, id apenas seletores de tags.
 *
 *
 *********************************************************************/
 
 
 *, *:before, *:after {
+    margin: 0;
+    padding: 0;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
+
 
 
 body,
@@ -25,6 +28,8 @@ html {
     font-size: $base-font-size;
     font-size:100%; /* flexible baseline */
 }
+
+body { height: 100%; }
 
 
 h1,
@@ -40,4 +45,18 @@ address,{
 }
 
 
-ol li{list-style: none;}
+ul,
+ol,
+ul li,
+ol li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover { text-decoration: none; }
+
+fieldset{ border: none; }
+
+address { font-style:normal; }
+

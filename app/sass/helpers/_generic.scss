@@ -1,18 +1,22 @@
 /*********************************************************************
 *
-*  Generic Module
+*  Modulo genéricos
 *
-*  This Module Generics that might increase production in the project
+*  Esse módulo ajuda aumentar a melhor no tempo, ao invés de
+*  ficar digitando um propriedade você extende.
 *
+*  Cuidado ao usar em projetos e lembre-se de usar apenas
+*  placeholder (%) para não aumentar o número de linhas
+*  em seu projeto
 *
-*    USE:
+*    Como usar:
 *
 *   .minhaClasse {
 *        @extend %display-block, %bold, %text-justify;
 *   }
 *
-*   Note:
-*   Use consciously
+*   Nota:
+*   Use com consciência
 *
 *********************************************************************/
 
@@ -27,9 +31,9 @@
 
 %uppercase { text-transform: uppercase; }
 
-%underline { text-decoration: underline; }
+%no-style {text-decoration: none; }
 
-%no-underline {text-decoration: none; }
+%underline { text-decoration: underline; }
 
 %text-left { text-align: left;}
 
@@ -61,6 +65,27 @@
    text-indent: -999px;
    overflow: hidden;
 }
+
+%resize-image{
+  width: 100%;
+  height: auto;
+}
+
+
+/*********************************************************************
+*   SIZE
+**********************************************************************/
+
+%section-full{
+   @extend %display-block;
+   width: 100%;
+   min-height: 100%;
+}
+
+
+
+
+
 
 
 

@@ -1,13 +1,19 @@
 /*********************************************************************
 *
-*  Start Module
+*  Módulo inicial!
 *
-*  This module is NOT responsible for style,
-*  it does only import other modules,
-*  start  for the project.
-*  No matter modules elsewhere,
-*  this leaves the messy and even confusing design.
-*  Aside / vendors that are made by third parties.
+*  Esse módulo não é responsável por estilos,
+*  serve apenas para importar outros módulos,
+*  que startam o projeto.
+*
+*  Ao rodar o grunt server ele roda automaticamente,
+*  o sass e gera em tempo de execução o css.
+*
+*  Obs: Os vendors usados podem ser colocados na pasta /css/venderos
+*  ou na pasta "bower components" assim sendo importados pelo bower.
+*
+*  Nota: Coloque as imagens linkadas no css na pasta /img/css_images.
+*  Caso não queira versionar alguma image coloquei também nessa pasta.
 *
 *
 *********************************************************************/
@@ -31,7 +37,7 @@
 @import "base/variables";
 @import "base/basic";
 @import "base/typography";
-
+@import "base/scaffolding";
 
 //COMPONENTS
 @import "components/sprite";
@@ -39,6 +45,7 @@
 //LAYOUT
 @import "layout/header";
 @import "layout/footer";
+@import "layout/nav";
 
 
 
